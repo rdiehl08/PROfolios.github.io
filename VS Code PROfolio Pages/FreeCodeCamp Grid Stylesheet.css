@@ -1,0 +1,134 @@
+
+/* Construct The Initial Grid Layout */
+.grid-container {
+    display: inline-grid;
+    width: 40%;
+    margin: auto;
+    height: auto;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-gap: 5px;
+    background-image: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?size=626&ext=jpg);
+    padding: 0.4%;
+    border-radius: 10%;
+ }
+.grid-container > div {
+text-align: center;
+align-content: center;
+padding: 1% 1%;
+font-size: 16px;
+}
+}
+.item1 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-top-left-radius: 40%;
+}
+.item2 {
+    grid-area: 1 / 2 / 1 / 5;
+}
+.item3 {
+    grid-area: 1 / 5 / 1 / 6;
+    border-top-right-radius: 40%;
+}
+.item4 {
+    grid-area: 2 / 1 / 5 / 2;
+}
+.item5 {
+    grid-area: 2 / 2 / 5 / 5;
+}
+.item6 p {
+    font-size: small;
+}
+.item7 p{
+    font-size: small;
+}
+.item8 p {
+    font-size: small;
+}
+.item9 {
+    grid-area: 5 / 1 / 7 / 2;
+    border-bottom-left-radius: 40%;
+}
+.item10 {
+    grid-area: 5 / 2 / 5 / 5;
+    row-gap: -5%;
+}
+.item11 {
+    grid-area: 5 / 5 / 7 / 6;
+    border-bottom-right-radius: 40%;
+}
+.item12 {
+    grid-area: 6 / 2 / 6 / 5;
+}
+
+/* Customize Grid Item Interiors */
+.item2 h1 {
+    font-size: xx-large;
+    font-style: italic;
+    color: rgb(233, 48, 63);
+}
+.item10 h4 {
+    font-style: italic;
+    color: rgb(233, 48, 63);
+}
+.item10 h2 {
+    font-size: x-large;
+    color: rgb(233, 48, 63);
+}
+
+/* Build Sidebar Menu */
+.menu ul {
+    list-style-type: none;
+    margin: 75% 0 0 0;
+    padding: 0;
+    }
+    
+.menu li {
+    padding: 5%;
+    width: 100%;
+    margin: 8% 0 14% 9%;
+    text-align: center;
+    font-size: small;
+    border: 1px white solid;
+    border-radius: 20%;
+    background-color: rgb(233, 48, 63);
+    color: white;
+    box-shadow: 5px 5px 5px rgb(207, 100, 132);
+    }
+    
+.menu li:hover {
+    background-color: #3accc0;
+    box-shadow: 5px 5px 5px blueviolet;
+    }
+
+
+    /* Build Center Image Photo */
+.image {
+    width: 98%;
+    height: auto;
+    }
+
+img {
+    width: 75%;
+    padding: 1% 1% 1% 1%;
+    margin-top: 5%;
+    height: auto;
+    background-size: contain;
+}
+
+[title~=author_pic] {
+    border-radius: 50%;
+    border: 3px rgb(233, 48, 63) inset;
+    box-shadow: 0 2px 3px rgb(207, 100, 132);
+} 
+[title~=company_logo] {
+    margin: 30% 0 0 2%;
+    border-radius: 25%;
+    border: 2px rgb(233, 48, 63) inset;
+    box-shadow: 3px 3px 3px rgb(207, 100, 132);
+} 
+[title~=author_pic]:hover {
+    width: 90%;
+    transition: ease-in-out;
+    transition-duration: 2s;
+}
+

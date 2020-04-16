@@ -1,0 +1,140 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(238, 242, 245);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+.header {
+    background-image: linear-gradient(90deg, rgb(127, 250, 56), dodgerblue);
+    max-height: 100px;
+    padding: 1px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    text-align: center;
+    border: 1px #2051da solid;
+    border-radius: 20%;
+    background-color: rgb(37, 151, 226);
+    color: #ffffff;
+    box-shadow: 5px 5px 5px rgb(131, 133, 130);
+}
+
+.menu li:hover {
+    background-color: #2051da;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.containercoaster {
+    width: 33%;
+    height: auto;
+    min-width: 300px;
+    min-height: 200px;
+    align-content: center;
+    border: solid 5px inset silver;
+    border-radius: 25%;
+    background-color: rgb(89, 112, 173);
+    margin: 2% 2% 2% 2%;
+    box-shadow: 5px 5px 5px rgb(131, 133, 130);
+    color: whitesmoke;
+}
+.containercoaster h4 {
+    text-align: center;
+    font-style: italic;
+}
+.containerCardFront {
+    margin: auto;
+    border: solid 5px rgb(31, 169, 233);
+    border-radius: 6%;
+    background-color: rgb(135, 136, 135);
+    width: 64%;
+    margin-bottom: 5px;
+    text-align: center;
+    height: auto;
+    min-height: 150px;
+    color: whitesmoke;
+}
+.containerCardFront h3 {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+.containerCardFront p {
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+[title~=author_pic] {
+    width: 70%;
+    border-radius: 50%;
+    border: solid lightseagreen 2px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+}
+        
+  [title~=author_name] {
+    font-weight: 600;
+    font-family: Garamond;
+    color: #B0C4DE;
+}
+.containerCardBack {
+
+}
+.clearfix::after {
+    content: "";
+      clear: both;
+      display: table;
+    }
+table {
+      border-collapse: collapse;
+      width: 100%;
+  }
+  th {
+    padding: 6px 2px 6px 0;
+    font-size: larger;
+    text-align: center;     
+  }
+  td {
+      padding: 2px;
+      text-align: left;
+      border-bottom: 2px solid lightskyblue;
+      border-top: 2px solid lightskyblue;
+  }
+tr:hover:not(th) {background-color: lightseagreen;}
+
